@@ -62,3 +62,25 @@ lubi(piotr,X):-sport(X),jarosz(X).
 lubi(piotr,X):-czyta(X).
 lubi(pawel,X):-jarosz(X),sport(X),czyta(X).
 lubi(X,Y):-lubi(Y,X).
+
+Zad. gory
+
+lubi(jan,tatry).
+lubi(jan,beskidy).
+lubi(jerzy,beskidy).
+lubi(jerzy,bieszczady).
+lubi(adam,sudety).
+lubi(justyna,bieszczady).
+bratniadusza(X,Y):-lubi(X,G),lubi(Y,G),X\==Y.
+
+% 7 klauzul
+% 6 faktow
+% 1 regula
+% 2 definicje relacji
+
+% 1. false
+% 2. beskidy
+% 3. jerzy,justyna
+% 4. true
+% 5. jerzy
+% 6. jan, jerzy, jerzy, justyna
