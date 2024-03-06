@@ -5,3 +5,12 @@ Zastępujące cele:
 2. sasiad_oli(X).
 3. czy_sasiad_marcina(X).
 4. czy_wspolni_sasiedzi(X, Y).
+
+===
+
+?fu(a,X,f(g(y)))  =  fu(V,h(2,V),f(V))
+V = a
+fu(a,X,f(g(Y)))     fu(a,h(Z,a),f(a))
+X = h(Z,a)
+fu(a,h(Z,a),t(g(Y)))     fu(a,h(Z,a),f(a))
+g(Y) /= a
