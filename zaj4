@@ -1,1 +1,24 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
 
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- trace.
+true.
+
+[trace]  ?- dziadek(X,piotr).
+   Call: (10) dziadek(_16908, piotr) ? creep (enter)
+   Call: (11) ojciec(_16908, _18098) ? creep
+   Exit: (11) ojciec(karol, jan) ? creep
+   Call: (11) dziecko(piotr, jan) ? creep
+   Fail: (11) dziecko(piotr, jan) ? creep
+   Redo: (11) ojciec(_16908, _18098) ? creep
+   Exit: (11) ojciec(karol, adam) ? creep
+   Call: (11) dziecko(piotr, adam) ? creep
+   Exit: (11) dziecko(piotr, adam) ? creep
+   Exit: (10) dziadek(karol, piotr) ? creep
+X = karol.
+
+[trace]  ?- 
