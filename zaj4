@@ -1,12 +1,5 @@
 Zadanie 1
 
-Welcome to SWI-Prolog (threaded, 64 bits, version 8.4.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 ?- trace.
 true.
 
@@ -22,5 +15,24 @@ true.
    Exit: (11) dziecko(piotr, adam) ? creep
    Exit: (10) dziadek(karol, piotr) ? creep
 X = karol.
+
+[trace]  ?- 
+
+Zadanie 3
+
+?- trace.
+true.
+
+[trace]  ?- p(a,X).
+   Call: (10) p(a, _16910) ? creep
+   Exit: (10) p(a, d) ? creep
+X = d ;
+   Redo: (10) p(a, _16910) ? creep
+   Call: (11) q(a, _20946) ? creep
+   Exit: (11) q(a, b) ? creep
+   Call: (11) r(b, _16910) ? creep
+   Exit: (11) r(b, c) ? creep
+   Exit: (10) p(a, c) ? creep
+X = c.
 
 [trace]  ?- 
