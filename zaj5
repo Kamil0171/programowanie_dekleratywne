@@ -1,1 +1,32 @@
 Zadanie 1
+
+?- wielomian(y,y).
+true ;
+false.
+
+?- wielomian(5,x).
+true.
+
+?- wielomian(5,y).
+true.
+
+?- wielomian(2*x,x).
+true ;
+false.
+
+?- wielomian(3*x+1,x).
+true ;
+false.
+
+?- wielomian(x^2,x).
+true ;
+false.
+
+?- wielomian(x^(-2),x).
+false.
+
+?- wielomian(3*x^2+x+1,x).
+true ;
+false.
+
+?- 
